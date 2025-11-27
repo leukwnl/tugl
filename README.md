@@ -1,4 +1,4 @@
-# `tugl` — Cross-Platform Haptics for CUGL
+# `tugl` — Mobile Platform Haptics for CUGL
 **A unified haptics library for mobile games built with Cornell University’s Game Library (CUGL).**
 
 ## What is `tugl`?
