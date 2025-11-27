@@ -24,9 +24,9 @@ Yet haptics are one of the most impactful UX tools available to game designers. 
 - A channel for accessibile feedback
 - Higher player immersion
 
-`tugl` aims to remove these barriers and make high-quality haptics easy and standardized for all future CUGL mobile games.
+`tugl` aims to remove these barriers and make high-quality haptics easy and standardized for all future mobile games built on CUGL.
 
-Another goal of this project is to provide a clear example of cross-platform bridging. Although such extensions are recommended in the course, there has historically been little example content for students to reference. `tugl` helps fill that gap, by showing how to write extensions for both Android and iOS.
+This project also aims to provide a clear example of cross-platform bridging. Although such extensions are recommended in the course, there has historically been little example content for students to reference. `tugl` helps fill that gap in how it write extensions for the CUGL engine, bridging libraries from both Android and iOS.
 
 ## Quick Start
 
