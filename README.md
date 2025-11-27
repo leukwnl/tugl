@@ -2,7 +2,7 @@
 **A unified haptics library for mobile games built with Cornell University’s Game Library (CUGL).**
 
 ## What is `tugl`?
-`tugl` (pronounced 'tuggle') is a is a lightweight, cross-platform library that enables high-quality haptic feedback in mobile games built on CUGL.
+`tugl` (pronounced 'tuggle') is a lightweight, cross-platform library that enables high-quality haptic feedback in mobile games built on CUGL.
 
 By bridging Core Haptics on iOS with Android's vibration APIs (via JNI), tugl provides developers a unified, platform agnostic API for triggering responsive and dynamic haptic effects.
 
