@@ -33,7 +33,7 @@ See usage.
 For now, only manual extraction is supported. Extract `cugl\` to the root directory that contains your CUGL library. Add the new files to the XCode Project.
 
 ## Examples
-*coming soon *
+*coming soon*
 
 ## Contributing
 *coming soon*
