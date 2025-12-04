@@ -27,11 +27,16 @@ Yet haptics are one of the most impactful UX tools available to game designers. 
 This project also aims to provide a clear example of cross-platform bridging. Although such extensions are recommended in the course, there has historically been little example content for students to reference. `tugl` helps fill that gap in how it write extensions for the CUGL engine, bridging libraries from both Android and iOS.
 
 ## Quick Start
+See usage.
 
 ## Usage
+For now, only manual extraction is supported. Extract `cugl\` to the root directory that contains your CUGL library. Add the new files to the XCode Project.
 
 ## Examples
+*coming soon *
 
 ## Contributing
+*coming soon*
 
 ## What Else?
+*coming soon*
