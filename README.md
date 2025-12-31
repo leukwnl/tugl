@@ -2,14 +2,14 @@
 ## What is `tugl`?
 `tugl` (pronounced 'tuggle') is a companion library to Cornell University’s Game Library (CUGL) for crafting haptic experiences on iOS and Android devices.
 
-By bridging Core Haptics on iOS with Android's vibration APIs (via JNI), tugl provides developers a unified, platform agnostic API for triggering responsive and dynamic haptic effects.
+By bridging Core Haptics on iOS with Android's vibration APIs (via JNI), tugl aims to provide developers with a unified, platform agnostic API for triggering responsive and dynamic haptic effects.
 
 Save time from writing platform-specific Objective-C, Swift, or Java/Kotlin code. No more custom JNI glue. `tugl` gives developers clean unified calls from C++ that can work anywhere.
 
-*Documentation coming soon.*
+*API Documentation coming soon.*
 
 ## Motivation
-In the history of Cornell's CS4152/5152: Advanced Game Architecture at Cornell courses, *no* mobile game project has successfully implemented haptic feedback until 2025. I created the first successful implementation for innate studios and our game *Trigger Happy*.
+In the history of Cornell's CS4152/5152: Advanced Game Architecture at Cornell courses, *no* mobile game project (to my knowledge) has successfully implemented haptic feedback until 2025. I created the first successful implementation for innate studios and our game *Trigger Happy*.
 
 The absence of haptics hasn't been due to lack of interest, rather because doing so has traditionally been impractical. Common obstacles include:
 - Platform fragmentation: iOS uses Core Haptics or UIFeedbackGenerator, while Android uses multiple vibration APIs with behaviors varying between devices.
@@ -26,17 +26,19 @@ Yet haptics are one of the most impactful UX tools available to game designers. 
 
 This project also aims to provide a clear example of cross-platform bridging. Although such extensions are recommended in the course, there has historically been little example content for students to reference. `tugl` helps fill that gap in how it write extensions for the CUGL engine, bridging libraries from both Android and iOS.
 
-## Quick Start
-See usage.
+## Updates
+- Currently, only iOS haptics are supported.
+- Android platform bridging is on hiatus at the moment.
+- Feel free to contact me if you'd like to contribute!
 
 ## Usage
 For now, only manual extraction is supported. Extract `cugl\` to the root directory that contains your CUGL library. Add the new files to the XCode Project.
 
 ## Examples
-*coming soon*
+See more at the [`tuggle-demo`](https://github.com/leukwnl/tuggle-demo).
 
 ## Contributing
-*coming soon*
+Email me at ll594@cornell.edu.
 
 ## What Else?
-*coming soon*
+If this library helped your game feel better at all, stars are appreciated!
