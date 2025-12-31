@@ -40,10 +40,10 @@ For now, only manual extraction is supported.
 5. Finally, find the `cugl\Source\cugl\core\input` folder on the XCode project navigator, then add the files `CUHapticsStub.cpp`, `CUHapticsAndroid.cpp` and `CUHapticsApple.mm`.
 
 ## Examples
-See more at the [`tuggle-demo`](https://github.com/leukwnl/tuggle-demo).
+See more at [`tuggle-demo`](https://github.com/leukwnl/tuggle-demo).
 
 ## Contributing
-Email me at ll594@cornell.edu.
+Email me at ll594@cornell.edu for any tweaks, bugs or contributions.
 
 ## What Else?
 If this library helped your game feel better at all, stars are appreciated!
