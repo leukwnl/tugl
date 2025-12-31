@@ -12,7 +12,7 @@
 //  Author: Luke Leh (ll594)
 //  Version: 4.1, 12/30/25
 //
-//  TUGL MIT License - See header file for full license text.
+//  TUGL MIT License
 //
 
 #include "cugl/core/input/CUHaptics.h"
@@ -24,9 +24,7 @@ using namespace cugl;
 std::shared_ptr<Haptics::Impl> Haptics::_impl = nullptr;
 bool Haptics::_initialized = false;
 
-// =============================================================================
 #pragma mark - Non-iOS Stubs
-// =============================================================================
 
 #if !TARGET_OS_IPHONE
 
@@ -113,9 +111,7 @@ void HapticPlayer::setSharpness(float s) { _sharpness = clamp01(s); }
 
 #else
 
-// =============================================================================
 #pragma mark - iOS Implementation
-// =============================================================================
 
 #import <CoreHaptics/CoreHaptics.h>
 #import <Foundation/Foundation.h>
@@ -166,11 +162,9 @@ NSDictionary *loadAHAPFile(const std::string &filename) {
   return [NSJSONSerialization JSONObjectWithData:data options:0 error:&err];
 }
 
-} // anonymous namespace
+}
 
-// =============================================================================
 #pragma mark - Haptics::Impl
-// =============================================================================
 
 class Haptics::Impl {
   void *_lightGen = nullptr;
@@ -457,9 +451,7 @@ public:
   }
 };
 
-// =============================================================================
 #pragma mark - Haptics Public API
-// =============================================================================
 
 bool Haptics::init() {
   if (_initialized)
@@ -509,9 +501,7 @@ bool Haptics::play(const std::string &f) {
   return _initialized && _impl && _impl->play(f);
 }
 
-// =============================================================================
 #pragma mark - HapticPlayer::Impl
-// =============================================================================
 
 class HapticPlayer::Impl {
   CHHapticEngine *_engine API_AVAILABLE(ios(13.0)) = nil;
@@ -707,9 +697,8 @@ public:
   }
 };
 
-// =============================================================================
+
 #pragma mark - HapticPlayer Public API
-// =============================================================================
 
 HapticPlayer::HapticPlayer()
     : _impl(std::make_unique<Impl>()), _intensity(1.f), _sharpness(0.5f),

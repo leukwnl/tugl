@@ -40,14 +40,12 @@ namespace cugl
 {
 
   /**
-   * Static utility class for fire-and-forget haptic feedback.
+   * Static utility class for fire-and-forget haptic feedback, with default CoreHaptic presets.
    *
    * Use this class for simple haptic effects that play immediately and require
    * no lifecycle management. For haptics that need to be stopped, paused, or
    * modulated in real-time, use HapticPlayer instead.
    *
-   * Think of Haptics like firing a gun - pull the trigger, bullet fires, done.
-   * You don't control the bullet after it leaves.
    *
    * Example usage:
    * ```
@@ -141,15 +139,13 @@ namespace cugl
 
     /**
      * Plays a transient haptic effect using full CoreHaptics.
-     *
-     * This is the exact equivalent of the Swift CHHapticEvent(.hapticTransient)
-     * approach. Provides true continuous control over BOTH intensity AND sharpness,
+     * Provides true continuous control over BOTH intensity AND sharpness,
      * unlike tap() which approximates sharpness using generator presets.
      *
-     * Safe for high-frequency calls (uses delayed release like Swift's ARC).
+     * Safe for high-frequency calls (uses delayed release to simulate Swift's ARC).
      * Use this when you need precise haptic expression, like the Fidgetable app.
      *
-     * Example (equivalent to Swift Fidgetable's slideHaptic):
+     * Example from a sliding haptic:
      * ```
      * void onDrag(Vec2 velocity) {
      *     float intensity = std::min(velocity.length(), 2500.0f) / 2500.0f;
@@ -195,8 +191,6 @@ namespace cugl
    * can be paused/resumed, or need real-time intensity adjustment. Each
    * HapticPlayer instance is independent - multiple can play concurrently.
    *
-   * Think of HapticPlayer like holding a garden hose - turn on, water flows,
-   * turn off when done. You control the flow while it's running.
    *
    * Example usage:
    * ```
@@ -206,7 +200,7 @@ namespace cugl
    * // ... later
    * rumble->stop();  // Now it stops
    *
-   * // Looping pattern with real-time modulation
+   * // Looping pattern with modulation
    * auto engine = HapticPlayer::alloc();
    * engine->load("engine_rumble.ahap");
    * engine->setLooping(true);
