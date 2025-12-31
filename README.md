@@ -32,7 +32,11 @@ This project also aims to provide a clear example of cross-platform bridging. Al
 - Feel free to contact me if you'd like to contribute!
 
 ## Usage
-For now, only manual extraction is supported. Extract `cugl\` to the root directory that contains your CUGL library. Add the new files to the XCode Project.
+For now, only manual extraction is supported.
+1. Extract `cugl\` to the root directory that contains the CUGL library.
+2. Then, add the new files to the XCode Project.
+3. To do that, find the `cugl\Include\cugl\core\input` folder on the XCode project navigator, and add the file `CUHaptics.h`.
+4. Finally, find the `cugl\Source\cugl\core\input` folder on the XCode project navigator, then add the files `CUHapticsStub.cpp`, `CUHapticsAndroid.cpp` and `CUHapticsApple.mm`.
 
 ## Examples
 See more at the [`tuggle-demo`](https://github.com/leukwnl/tuggle-demo).
