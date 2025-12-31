@@ -9,6 +9,8 @@ Save time from writing platform-specific Objective-C, Swift, or Java/Kotlin code
 *API Documentation coming soon.*
 
 ## Motivation
+Feedback from in-game events shapes how players experience video games and interactive media as a whole. Visual and auditory feedback are commonly used to enhance game feel, but one often underappreciated domain is touch. This is especially true in showcase environments, which are frequently loud and distracting. In such spaces, auditory feedback can easily be drowned out, diminishing the player’s experience. Haptic feedback introduces a new way for players to feel what’s happening in the game, while also offering a more accessible avenue for experiencing interactive systems.
+
 In the history of Cornell's CS4152/5152: Advanced Game Architecture at Cornell courses, *no* mobile game project (to my knowledge) has successfully implemented haptic feedback until 2025. I created the first successful implementation for innate studios and our game *Trigger Happy*.
 
 The absence of haptics hasn't been due to lack of interest, rather because doing so has traditionally been impractical. Common obstacles include:
