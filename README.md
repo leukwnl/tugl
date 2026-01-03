@@ -1,4 +1,11 @@
-# `tugl` — Mobile Platform Haptics for CUGL
+<div align="center">
+
+# tugl
+#####  Mobile Platform Haptics for CUGL
+
+<img height="140" alt="logo" src="https://github.com/user-attachments/assets/e64be617-7fd7-4464-978b-a55ed913f7d3" />
+</div>
+
 ## What is `tugl`?
 `tugl` (pronounced 'tuggle') is a companion library to Cornell University’s Game Library (CUGL) for crafting haptic experiences on iOS and Android devices.
 
