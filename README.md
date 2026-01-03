@@ -1,9 +1,9 @@
 <div align="center">
 
 # tugl
-#####  Mobile Platform Haptics for CUGL
+###  Haptics Library for CUGL
 
-<img height="140" alt="logo" src="https://github.com/user-attachments/assets/e64be617-7fd7-4464-978b-a55ed913f7d3" />
+<img height="280" alt="logo" src="https://github.com/user-attachments/assets/e64be617-7fd7-4464-978b-a55ed913f7d3" />
 </div>
 
 ## What is `tugl`?
